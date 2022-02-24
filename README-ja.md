@@ -1,4 +1,4 @@
-[日本語版 README](https://github.com/nkjzm/UniHamburger/blob/master/README-ja.md)
+[README(English)](https://github.com/nkjzm/UniHamburger/blob/master/README.md)
 
 # UniHamburger
 
