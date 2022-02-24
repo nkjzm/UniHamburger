@@ -1,3 +1,5 @@
+[日本語版 README](https://github.com/nkjzm/UniHamburger/blob/master/README-ja.md)
+
 # UniHamburger
 
 Generic hamburger menu for Unity
@@ -13,8 +15,8 @@ After Unity 2019.3.4f1, Unity 2020.1a21, that support path query parameter of gi
 
 ## Dependency
 
-- UniRx
-- UniTask
+- [UniRx](https://github.com/neuecc/UniRx): `https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts`
+- [UniTask](https://github.com/Cysharp/UniTask): `https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask` 
 
 # Usage
 
