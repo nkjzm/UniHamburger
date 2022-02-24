@@ -1,0 +1,1 @@
+It is not possible to open a scene in a package, so duplicate it in your own project and then open it.
