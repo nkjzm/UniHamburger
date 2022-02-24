@@ -1,0 +1,12 @@
+{
+  "name": "jp.nkjzm.unihamburger",
+  "version": "1.0.0",
+  "displayName": "UniHamburger",
+  "description": "Simple Hamburger Menu for Unity",
+  "unity": "2020.3",
+  "license": "MIT",
+  "dependencies": {
+    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+    "com.neuecc.unirx": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts"
+  }
+}
