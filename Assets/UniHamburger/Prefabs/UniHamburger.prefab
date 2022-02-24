@@ -150,16 +150,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0525953b0ea4b72993b8fe7d0c26c41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intIntSliderElementPrefab: {fileID: 1001095453656243204, guid: 27b1f438f6f277444b84767757153e62,
-    type: 3}
-  floatIntSliderElementPrefab: {fileID: 4116878035179143596, guid: 2860ce8897bbe37419c4a3ffa6c9e6b5,
-    type: 3}
-  toggleElementPrefab: {fileID: 897581849726180006, guid: f360c36d87bbe91438ec8d9c45f4a6e0,
-    type: 3}
-  arrayDropdownItemPrefab: {fileID: -5250018559006526775, guid: 9bfbcfe60785d45c2bdb9a018b4a0a7d,
-    type: 3}
-  enumDropdownElementPrefab: {fileID: 1059413519, guid: 3923ca5309cfe814aaa527bb4ccebf43,
-    type: 3}
+  intIntSliderElementPrefab: {fileID: 1001095453656243204, guid: 27b1f438f6f277444b84767757153e62, type: 3}
+  floatIntSliderElementPrefab: {fileID: 4116878035179143596, guid: 2860ce8897bbe37419c4a3ffa6c9e6b5, type: 3}
+  toggleElementPrefab: {fileID: 897581849726180006, guid: f360c36d87bbe91438ec8d9c45f4a6e0, type: 3}
+  arrayDropdownItemPrefab: {fileID: -5250018559006526775, guid: 9bfbcfe60785d45c2bdb9a018b4a0a7d, type: 3}
+  enumDropdownElementPrefab: {fileID: 1059413519, guid: 3923ca5309cfe814aaa527bb4ccebf43, type: 3}
   contents: {fileID: 5590335566861812334}
   resetButton: {fileID: 5590335567138501772}
 --- !u!114 &5590335566629690420
@@ -243,7 +238,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 975134a359db343c891f151d86200677, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 0
     m_FontStyle: 0
     m_BestFit: 1
@@ -1246,7 +1241,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 797aa70c2e5ae4696baf9bb88a2adcc4, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 1
