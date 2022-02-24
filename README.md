@@ -1,5 +1,29 @@
 # UniHamburger
 
-Unityで使える汎用的なハンバーガーメニュー
+Generic hamburger menu for Unity
 
-準備できたら公開予定です（2021.09.22コメント）
+# UPM Package
+
+After Unity 2019.3.4f1, Unity 2020.1a21, that support path query parameter of git package. 
+
+1. Open your Unity project.
+2. Open `Window -> Package Manager`.
+3. Click "+" > "Add package from git URL...".
+4. Enter `https://github.com/nkjzm/UniHamburger.git?path=Assets/UniHamburger` and click "Add".
+
+## Dependency
+
+- UniRx
+- UniTask
+
+# Usage
+
+ref: [Example.cs](https://github.com/nkjzm/UniHamburger/blob/main/Assets/UniHamburger/Example/Example.cs)
+
+# LICENSE
+
+[MIT LICENSE](https://github.com/nkjzm/UniBuildNumber/blob/master/LICENSE)
+
+# Author
+
+https://twitter.com/nkjzm
