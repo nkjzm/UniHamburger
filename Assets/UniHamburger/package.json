@@ -2,11 +2,8 @@
   "name": "jp.nkjzm.unihamburger",
   "version": "1.0.0",
   "displayName": "UniHamburger",
-  "description": "Simple Hamburger Menu for Unity",
+  "description": "Generic hamburger menu for Unity",
   "unity": "2020.3",
   "license": "MIT",
-  "dependencies": {
-    "com.cysharp.unitask": "2.2.5",
-    "com.neuecc.unirx": "7.1.0"
-  }
+  "dependencies": {}
 }
