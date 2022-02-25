@@ -10,6 +10,7 @@ jobs:
   test:
     name: Run EditMode and PlayMode Test
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       # actions/checkout@v2 を利用して作業ディレクトリに
       # Unity プロジェクトの中身をダウンロードしてくる
