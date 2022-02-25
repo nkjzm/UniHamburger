@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using nkjzm.UniHamburger.Elements.Base;
 using nkjzm.UniHamburger.Elements.Interface;
 using UnityEngine;
@@ -125,7 +126,10 @@ namespace nkjzm.UniHamburger
         /// </summary>
         public void ResetAllElements()
         {
-            foreach (var resettable in resettableList) resettable.ResetParam();
+            if (resettableList.Any())
+            {
+                foreach (var resettable in resettableList) resettable.ResetParam();
+            }
         }
     }
 }
