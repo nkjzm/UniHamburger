@@ -1,0 +1,42 @@
+name: Run the WebGL build
+on:
+  workflow_dispatch: {}
+jobs:
+  build:
+    name: Run the WebGL build
+    runs-on: ubuntu-latest
+    steps:
+      # actions/checkout@v2 を利用して作業ディレクトリに
+      # Unity プロジェクトの中身をダウンロードしてくる
+      - name: Check out my unity project.
+        uses: actions/checkout@v2
+
+      # GameCI の Builder を利用して、
+      # Unity プロジェクトのビルドを実行する
+      - name: Run the WebGL build
+        uses: game-ci/unity-builder@v2
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          # 今回は WebGL ビルドを行いたいため WebGL を指定する
+          # WebGL 以外の指定可能な値は下記に記載の値が利用可能
+          # ref: https://docs.unity3d.com/ScriptReference/BuildTarget.html
+          targetPlatform: WebGL
+          unityVersion: 2020.3.26f1
+      # Builder で出力した WebGL ビルドを GitHub Pages にデプロイする
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.3
+        with:
+          # GitHub Pages デプロイ用の Orphan ブランチ名を指定する
+          branch: gh-pages
+
+          # デプロイ用ビルドフォルダパスを指定する
+          # GameCI の Builder はデフォルトでは build フォルダにビルド内容を出力する
+          folder: build
+
+      # Builder で出力した WebGL ビルドをアーティファクトでダウンロード可能にする
+      - name: Upload the WebGL Build
+        uses: actions/upload-artifact@v2
+        with:
+          name: Build
+          path: build
