@@ -1,3 +1,5 @@
+[![Run EditMode and PlayMode Test](https://github.com/nkjzm/UniHamburger/actions/workflows/test.yml/badge.svg)](https://github.com/nkjzm/UniHamburger/actions/workflows/test.yml) [![Run the WebGL build](https://github.com/nkjzm/UniHamburger/actions/workflows/webgl_build.yml/badge.svg)](https://github.com/nkjzm/UniHamburger/actions/workflows/webgl_build.yml)
+
 [日本語版 README](https://github.com/nkjzm/UniHamburger/blob/master/README-ja.md)
 
 # UniHamburger
