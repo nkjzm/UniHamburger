@@ -84,21 +84,11 @@ namespace nkjzm.UniHamburger.Tests
         [UnityTest]
         public IEnumerator キャンセルが発火する() => UniTask.ToCoroutine(async () =>
         {
-            var token = Utils.CreateTokenToBeCancelled(0);
-
-            bool isSuccess = false;
-
-            try
-            {
-                await UniTask.DelayFrame(10, cancellationToken: token);
-                Assert.Fail();
-            }
-            catch (OperationCanceledException)
-            {
-                isSuccess = true;
-            }
-
-            Assert.AreEqual(true, isSuccess);
+            var milliSeconds = 1;
+            var token = Utils.CreateTokenToBeCancelled(milliSeconds);
+            Assert.AreEqual(false, token.IsCancellationRequested);
+            await UniTask.Delay(milliSeconds);
+            Assert.AreEqual(true, token.IsCancellationRequested);
         });
     }
 }
