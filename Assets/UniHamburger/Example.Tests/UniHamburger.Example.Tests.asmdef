@@ -1,0 +1,19 @@
+{
+    "name": "UniHamburger.Example.Tests",
+    "rootNamespace": "nkjzm.UniHamburger.Example.Tests",
+    "references": [
+        "GUID:42366df700c691b459c704a9bf136a6d",
+        "GUID:848c3f503623e78438ec6b5e7a1ec2ad"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
