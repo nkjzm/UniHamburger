@@ -47,6 +47,8 @@ jobs:
 
           # テスト実行時に利用したい Docker イメージを明示的に指定できる
           # customImage: 'unityci/editor:2020.1.14f1-base-0'
+          customParameters: -debugCodeOptimization -enableCodeCoverage -coverageResultsPath ./coverage-results -coverageOptions generateAdditionalMetrics
+
 
       # テストの実行結果をアーティファクトにアップロードしてダウンロードして参照できるようにする
       - uses: actions/upload-artifact@v2
@@ -54,3 +56,11 @@ jobs:
         with:
           name: Test results
           path: artifacts
+
+      - name: Upload XML report to Codecov
+        uses: codecov/codecov-action@v2
+        with:
+         name: PlayMode
+         flags: automated
+         token: ${{ secrets.CODECOV_TOKEN }}
+         files: coverage-results/**/*.xml
