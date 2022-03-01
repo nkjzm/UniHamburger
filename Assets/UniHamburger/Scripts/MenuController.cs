@@ -11,10 +11,21 @@ namespace nkjzm.UniHamburger
         [SerializeField] private Button button;
         [SerializeField] private CanvasGroup panelCanvasGroup;
         [SerializeField] private bool openOnInit;
-        private float initAlpha;
-        private bool isOpen;
 
-        private void Start()
+        /// <summary>
+        /// 初期状態で開く
+        /// </summary>
+        public bool OpenOnInit
+        {
+            set => openOnInit = value;
+        }
+
+        /// <summary>
+        /// 開いている
+        /// </summary>
+        public bool IsExpand => panelCanvasGroup.interactable;
+
+        public void Start()
         {
             if (openOnInit)
                 Expand();
@@ -24,7 +35,10 @@ namespace nkjzm.UniHamburger
             button.onClick.AddListener(Switch);
         }
 
-        private void Switch()
+        /// <summary>
+        /// 開閉を切り替える
+        /// </summary>
+        public void Switch()
         {
             if (panelCanvasGroup.interactable)
                 Minimize();

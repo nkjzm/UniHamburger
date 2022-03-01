@@ -15,9 +15,9 @@ namespace nkjzm.UniHamburger.Tests
         /// <summary>
         /// 対象のプレハブを読み込む
         /// </summary>
-        /// <param name="fileName">対象プレハブのファイル名（拡張子不要）</param>
-        /// <typeparam name="T">対象プレハブの型名</typeparam>
-        /// <returns>プレハブの参照（見つからなかった場合はnullを返す）</returns>
+        /// <param name="fileName"> 対象プレハブのファイル名（拡張子不要） </param>
+        /// <typeparam name="T"> 対象プレハブの型名 </typeparam>
+        /// <returns> プレハブの参照（見つからなかった場合はnullを返す） </returns>
         public static T LoadPrefab<T>(string fileName) where T : Object
         {
             var filePath = AssetDatabase.FindAssets($"{fileName} t:Prefab")

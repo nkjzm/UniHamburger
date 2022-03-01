@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using nkjzm.UniHamburger.Elements.Base;
 using nkjzm.UniHamburger.Utils;
 using UniRx;
@@ -39,10 +38,7 @@ namespace nkjzm.UniHamburger.Elements.Defaults
                 .Subscribe(value => currentValue.Value = value)
                 .AddTo(this);
 
-            activeUpdated?.Subscribe(isEnabled =>
-                    toggle.GetComponentsInChildren<Button>().ToList()
-                        .ForEach(button => button.interactable = isEnabled))
-                .AddTo(this);
+            activeUpdated?.Subscribe(isEnabled => toggle.interactable = isEnabled).AddTo(this);
 
             return currentValue.AsObservable();
         }

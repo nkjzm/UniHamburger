@@ -13,6 +13,9 @@ namespace nkjzm.UniHamburger.Tests.Elements.Defaults
             target.GetComponentInChildren<Dropdown>().value = value;
         }
 
-        protected override int GetSelectedIndex() => target.GetComponentInChildren<Dropdown>().value;
+        protected override int GetSelectedIndex()
+        {
+            return target.GetComponentInChildren<Dropdown>().value;
+        }
     }
 }

@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using Cysharp.Threading.Tasks;
 using NUnit.Framework;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.TestTools;
-using Object = UnityEngine.Object;
 
 namespace nkjzm.UniHamburger.Tests
 {
@@ -14,8 +12,16 @@ namespace nkjzm.UniHamburger.Tests
         private const string DummyFileName = "Dummy";
         private const string DummyFileName2 = "Dummy2";
         private const string AssetsRoot = "Assets";
-        private static string DummyFilePath(string fileName) => $"{AssetsRoot}/{fileName}.prefab";
-        private static string DummyFolderPath(string fileName) => $"{AssetsRoot}/{fileName}";
+
+        private static string DummyFilePath(string fileName)
+        {
+            return $"{AssetsRoot}/{fileName}.prefab";
+        }
+
+        private static string DummyFolderPath(string fileName)
+        {
+            return $"{AssetsRoot}/{fileName}";
+        }
 
 
         [OneTimeSetUp]
@@ -82,13 +88,16 @@ namespace nkjzm.UniHamburger.Tests
         }
 
         [UnityTest]
-        public IEnumerator キャンセルが発火する() => UniTask.ToCoroutine(async () =>
+        public IEnumerator キャンセルが発火する()
         {
-            var milliSeconds = 1;
-            var token = Utils.CreateTokenToBeCancelled(milliSeconds);
-            Assert.AreEqual(false, token.IsCancellationRequested);
-            await UniTask.Delay(milliSeconds);
-            Assert.AreEqual(true, token.IsCancellationRequested);
-        });
+            return UniTask.ToCoroutine(async () =>
+            {
+                var milliSeconds = 1;
+                var token = Utils.CreateTokenToBeCancelled(milliSeconds);
+                Assert.AreEqual(false, token.IsCancellationRequested);
+                await UniTask.Delay(milliSeconds);
+                Assert.AreEqual(true, token.IsCancellationRequested);
+            });
+        }
     }
 }
