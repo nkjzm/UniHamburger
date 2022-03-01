@@ -17,7 +17,6 @@ namespace nkjzm.UniHamburger.Elements.Defaults
         [SerializeField] private Button Left, Right;
         [SerializeField] private Text Description;
         private IntReactiveProperty offsetValue;
-        private int defaultOffset;
         private float defaultValue;
         private float unit;
         private float min, max;
@@ -39,8 +38,7 @@ namespace nkjzm.UniHamburger.Elements.Defaults
 
             var key = KeyGenerator.CreateKey(label, salt);
             var currentValue = PlayerPrefs.GetFloat(key, defaultValue);
-            defaultOffset = (int)Mathf.Round((currentValue - defaultValue) / unit);
-            offsetValue = new IntReactiveProperty(defaultOffset);
+            offsetValue = new IntReactiveProperty((int)Mathf.Round((currentValue - defaultValue) / unit));
             offsetValue.Subscribe(offset =>
             {
                 var value = Convert(defaultValue, unit, offset);
@@ -77,9 +75,6 @@ namespace nkjzm.UniHamburger.Elements.Defaults
             return defaultValue + unit * offset;
         }
 
-        public override void ResetParam()
-        {
-            offsetValue.Value = defaultOffset;
-        }
+        public override void ResetParam() => offsetValue.Value = 0;
     }
 }
