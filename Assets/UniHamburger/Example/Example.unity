@@ -281,7 +281,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 16822880}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.7431694
+  m_Size: 0.65753424
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -480,8 +480,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 300, y: 0}
-  m_SizeDelta: {x: -640, y: -40}
+  m_AnchoredPosition: {x: 250, y: 0}
+  m_SizeDelta: {x: -540, y: -40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &743245862
 MonoBehaviour:
@@ -665,12 +665,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 960, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -988,8 +988,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 18
+    m_Font: {fileID: 12800000, guid: c1d3398211210b14d943bf1013263baf, type: 3}
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1086,7 +1086,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: c1d3398211210b14d943bf1013263baf, type: 3}
     m_FontSize: 24
     m_FontStyle: 1
     m_BestFit: 0
@@ -1114,6 +1114,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5477485685176594079, guid: 51b3ee07ea3f64d6c802de376122f9f3, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5477485685176594079, guid: 51b3ee07ea3f64d6c802de376122f9f3, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5477485685176594079, guid: 51b3ee07ea3f64d6c802de376122f9f3, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 960
+      objectReference: {fileID: 0}
+    - target: {fileID: 5477485685176594079, guid: 51b3ee07ea3f64d6c802de376122f9f3, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 600
+      objectReference: {fileID: 0}
     - target: {fileID: 5589736487404002525, guid: 51b3ee07ea3f64d6c802de376122f9f3, type: 3}
       propertyPath: m_Name
       value: UniHamburger
@@ -1141,6 +1157,10 @@ PrefabInstance:
     - target: {fileID: 5590335566861812334, guid: 51b3ee07ea3f64d6c802de376122f9f3, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5590335567000928954, guid: 51b3ee07ea3f64d6c802de376122f9f3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 5590335567138501771, guid: 51b3ee07ea3f64d6c802de376122f9f3, type: 3}
       propertyPath: m_AnchorMax.y
