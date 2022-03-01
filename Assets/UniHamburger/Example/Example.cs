@@ -15,7 +15,7 @@ namespace nkjzm.UniHamburger.Example
         {
             Apple,
             Orange,
-            Grape,
+            Grape
         }
 
         private void Start()
@@ -39,7 +39,7 @@ namespace nkjzm.UniHamburger.Example
                 .AddTo(this);
 
             elementController
-                .CreateEnumItem<Fruit>("好きなフルーツ", Fruit.Apple, salt: SampleSalt, activeUpdated: onActiveFruit)
+                .CreateEnumItem("好きなフルーツ", Fruit.Apple, salt: SampleSalt, activeUpdated: onActiveFruit)
                 .Subscribe(value => Debug.Log($"好きなフルーツ: {value}"))
                 .AddTo(this);
 

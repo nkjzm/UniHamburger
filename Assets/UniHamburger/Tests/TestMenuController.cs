@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using UnityEngine;
 
 namespace nkjzm.UniHamburger.Tests
 {
@@ -9,13 +10,22 @@ namespace nkjzm.UniHamburger.Tests
         private static string FileName => "UniHamburger";
 
         [OneTimeSetUp]
-        public void OneTimeSetup() => targetPrefab = Utils.LoadPrefab<MenuController>(FileName);
+        public void OneTimeSetup()
+        {
+            targetPrefab = Utils.LoadPrefab<MenuController>(FileName);
+        }
 
         [SetUp]
-        public void Setup() => target = UnityEngine.Object.Instantiate(targetPrefab);
+        public void Setup()
+        {
+            target = Object.Instantiate(targetPrefab);
+        }
 
         [Test]
-        public void 存在する() => Assert.IsNotNull(target);
+        public void 存在する()
+        {
+            Assert.IsNotNull(target);
+        }
 
         [Test]
         public void 初期に開く()

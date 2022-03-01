@@ -127,9 +127,8 @@ namespace nkjzm.UniHamburger
         public void ResetAllElements()
         {
             if (resettableList.Any())
-            {
-                foreach (var resettable in resettableList) resettable.ResetParam();
-            }
+                foreach (var resettable in resettableList)
+                    resettable.ResetParam();
         }
     }
 }

@@ -1,6 +1,5 @@
-﻿using Cysharp.Threading.Tasks;
-using NUnit.Framework;
-using UniRx;
+﻿using NUnit.Framework;
+using UnityEngine;
 
 namespace nkjzm.UniHamburger.Tests
 {
@@ -11,31 +10,58 @@ namespace nkjzm.UniHamburger.Tests
         private static string FileName => "UniHamburger";
 
         [OneTimeSetUp]
-        public void OneTimeSetup() => targetPrefab = Utils.LoadPrefab<ElementController>(FileName);
+        public void OneTimeSetup()
+        {
+            targetPrefab = Utils.LoadPrefab<ElementController>(FileName);
+        }
 
         [SetUp]
-        public void Setup() => target = UnityEngine.Object.Instantiate(targetPrefab);
+        public void Setup()
+        {
+            target = Object.Instantiate(targetPrefab);
+        }
 
         [Test]
-        public void 存在する() => Assert.IsNotNull(target);
+        public void 存在する()
+        {
+            Assert.IsNotNull(target);
+        }
 
         [Test]
-        public void Startを呼べる() => target.Start();
+        public void Startを呼べる()
+        {
+            target.Start();
+        }
 
         [Test]
-        public void CreateIntItemを呼べる() => target.CreateIntItem("", 0);
+        public void CreateIntItemを呼べる()
+        {
+            target.CreateIntItem("", 0);
+        }
 
         [Test]
-        public void CreateFloatItemを呼べる() => target.CreateFloatItem("", 0);
+        public void CreateFloatItemを呼べる()
+        {
+            target.CreateFloatItem("", 0);
+        }
 
         [Test]
-        public void CreateBoolItemを呼べる() => target.CreateBoolItem("", true);
+        public void CreateBoolItemを呼べる()
+        {
+            target.CreateBoolItem("", true);
+        }
 
         [Test]
-        public void CreateSelectionItemを呼べる() => target.CreateSelectionItem("", "", () => new[] { "" });
+        public void CreateSelectionItemを呼べる()
+        {
+            target.CreateSelectionItem("", "", () => new[] { "" });
+        }
 
         [Test]
-        public void CreateEnumItemを呼べる() => target.CreateEnumItem("", Test.Item);
+        public void CreateEnumItemを呼べる()
+        {
+            target.CreateEnumItem("", Test.Item);
+        }
 
         [Test]
         public void リセットを呼べる()
