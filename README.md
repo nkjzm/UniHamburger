@@ -7,7 +7,9 @@
 
 Generic hamburger menu for Unity
 
-[DEMO](https://nkjzm.github.io/UniHamburger/WebGL/WebGL/)
+![example](https://user-images.githubusercontent.com/7017772/156238980-9ec4174e-04c6-4f4d-a27e-36b59ab152fe.gif)
+
+[DEMO: Example.unity (WebGL)](https://nkjzm.github.io/UniHamburger/WebGL/WebGL/)
 
 # UPM Package
 
