@@ -1,5 +1,6 @@
 [![Run EditMode and PlayMode Test](https://github.com/nkjzm/UniHamburger/actions/workflows/test.yml/badge.svg)](https://github.com/nkjzm/UniHamburger/actions/workflows/test.yml) [![Run the WebGL build](https://github.com/nkjzm/UniHamburger/actions/workflows/webgl_build.yml/badge.svg)](https://github.com/nkjzm/UniHamburger/actions/workflows/webgl_build.yml)
 [![pages-build-deployment](https://github.com/nkjzm/UniHamburger/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/nkjzm/UniHamburger/actions/workflows/pages/pages-build-deployment)
+[![codecov](https://codecov.io/gh/nkjzm/UniHamburger/branch/main/graph/badge.svg?token=J4QCSSQFNU)](https://codecov.io/gh/nkjzm/UniHamburger)
 
 [日本語版 README](https://github.com/nkjzm/UniHamburger/blob/master/README-ja.md)
 
