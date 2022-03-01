@@ -8,6 +8,10 @@
 
 Generic hamburger menu for Unity
 
+![example](https://user-images.githubusercontent.com/7017772/156238980-9ec4174e-04c6-4f4d-a27e-36b59ab152fe.gif)
+
+[DEMO: Example.unity (WebGL)](https://nkjzm.github.io/UniHamburger/WebGL/WebGL/)
+
 # UPM Package
 
 After Unity 2019.3.4f1, Unity 2020.1a21, that support path query parameter of git package. 

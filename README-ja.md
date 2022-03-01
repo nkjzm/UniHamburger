@@ -1,8 +1,17 @@
+[![Run EditMode and PlayMode Test](https://github.com/nkjzm/UniHamburger/actions/workflows/test.yml/badge.svg)](https://github.com/nkjzm/UniHamburger/actions/workflows/test.yml) [![Run the WebGL build](https://github.com/nkjzm/UniHamburger/actions/workflows/webgl_build.yml/badge.svg)](https://github.com/nkjzm/UniHamburger/actions/workflows/webgl_build.yml)
+[![pages-build-deployment](https://github.com/nkjzm/UniHamburger/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/nkjzm/UniHamburger/actions/workflows/pages/pages-build-deployment)
+[![codecov](https://codecov.io/gh/nkjzm/UniHamburger/branch/main/graph/badge.svg?token=J4QCSSQFNU)](https://codecov.io/gh/nkjzm/UniHamburger)
+
 [README(English)](https://github.com/nkjzm/UniHamburger/blob/master/README.md)
 
 # UniHamburger
 
 Unityで使える汎用的なハンバーガーメニュー
+
+![example](https://user-images.githubusercontent.com/7017772/156238980-9ec4174e-04c6-4f4d-a27e-36b59ab152fe.gif)
+
+[デモページ: Example.unity (WebGL)](https://nkjzm.github.io/UniHamburger/WebGL/WebGL/)
+
 
 # UPM Package
 
