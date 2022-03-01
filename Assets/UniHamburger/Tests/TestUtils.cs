@@ -1,6 +1,11 @@
-﻿using NUnit.Framework;
+﻿using System;
+using System.Collections;
+using Cysharp.Threading.Tasks;
+using NUnit.Framework;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.TestTools;
+using Object = UnityEngine.Object;
 
 namespace nkjzm.UniHamburger.Tests
 {
@@ -75,5 +80,25 @@ namespace nkjzm.UniHamburger.Tests
             var target = Utils.LoadPrefab<GameObject>(string.Empty);
             Assert.IsNull(target);
         }
+
+        [UnityTest]
+        public IEnumerator キャンセルが発火する() => UniTask.ToCoroutine(async () =>
+        {
+            var token = Utils.CreateTokenToBeCancelled(0);
+
+            bool isSuccess = false;
+
+            try
+            {
+                await UniTask.DelayFrame(10, cancellationToken: token);
+                Assert.Fail();
+            }
+            catch (OperationCanceledException)
+            {
+                isSuccess = true;
+            }
+
+            Assert.AreEqual(true, isSuccess);
+        });
     }
 }
