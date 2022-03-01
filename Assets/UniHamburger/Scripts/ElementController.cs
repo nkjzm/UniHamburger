@@ -22,7 +22,7 @@ namespace nkjzm.UniHamburger
         [SerializeField] private Button resetButton;
         private readonly List<IResettable> resettableList = new List<IResettable>();
 
-        private void Start()
+        public void Start()
         {
             resetButton.onClick.AddListener(ResetAllElements);
         }
