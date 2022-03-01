@@ -281,7 +281,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 16822880}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.8333333
+  m_Size: 0.7431694
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -917,8 +917,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 20
-    m_Right: 20
+    m_Left: 15
+    m_Right: 15
     m_Top: 20
     m_Bottom: 20
   m_ChildAlignment: 0
@@ -989,7 +989,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 16
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1012,9 +1012,10 @@ MonoBehaviour:
     false, salt: Salt)\r\n        .Subscribe(locked =>\r\n        {\r\n           
     activeFruit.OnNext(!locked);\r\n            Debug.Log($\"\u30D5\u30EB\u30FC\u30C4\u3092\u30ED\u30C3\u30AF:
     {locked}\");\r\n        })\r\n        .AddTo(this);\r\n\r\n    // \u4F8B\uFF1A\u5217\u6319\u578B\u7248\u30C9\u30ED\u30C3\u30D7\u30C0\u30A6\u30F3\r\n   
-    elementController\r\n        .CreateEnumItem(\"\u30D5\u30EB\u30FC\u30C4\", Fruit.Apple,
-    salt: Salt, activeUpdated: activeFruit)\r\n        .Subscribe(value => Debug.Log($\"\u30D5\u30EB\u30FC\u30C4:
-    {value}\"))\r\n        .AddTo(this);\r\n\r\n    // \u4F8B\uFF1A\u914D\u5217\u7248\u30C9\u30ED\u30C3\u30D7\u30C0\u30A6\u30F3\r\n   
+    elementController.CreateEnumItem(\r\n            \"\u30D5\u30EB\u30FC\u30C4\",
+    Fruit.Apple, salt: Salt, activeUpdated: activeFruit)\r\n        .Subscribe(value
+    => Debug.Log($\"\u30D5\u30EB\u30FC\u30C4: {value}\"))\r\n        .AddTo(this);\r\n\r\n   
+    // \u4F8B\uFF1A\u914D\u5217\u7248\u30C9\u30ED\u30C3\u30D7\u30C0\u30A6\u30F3\r\n   
     var types = new[] { \"\u8349\u30BF\u30A4\u30D7\", \"\u6C34\u30BF\u30A4\u30D7\",
     \"\u708E\u30BF\u30A4\u30D7\" };\r\n    elementController\r\n        .CreateSelectionItem(\"\u30BF\u30A4\u30D7\",
     types[1], () => types, salt: Salt)\r\n        .Subscribe(value => Debug.Log($\"\u500B\u6570:
