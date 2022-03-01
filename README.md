@@ -32,7 +32,10 @@ ref: [Example.cs](https://github.com/nkjzm/UniHamburger/blob/main/Assets/UniHamb
 
 # LICENSE
 
-[MIT LICENSE](https://github.com/nkjzm/UniBuildNumber/blob/master/LICENSE)
+[UniHamburger](https://github.com/nkjzm/UniHamburger) is under the [MIT LICENSE](https://github.com/nkjzm/UniBuildNumber/blob/master/LICENSE).
+
+This library include [Noto_Sans_JP](https://fonts.google.com/noto/specimen/Noto+Sans+JP) under the [SIL OPEN FONT LICENSE](https://github.com/nkjzm/UniHamburger/blob/main/Assets/UniHamburger/Fonts/Noto_Sans_JP/OFL.txt).
+
 
 # Author
 

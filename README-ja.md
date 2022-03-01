@@ -33,7 +33,10 @@ Unity 2019.3.4f1, 2020.1a21以降では下記の形式での導入がサポー�
 
 # LICENSE
 
-[MIT LICENSE](https://github.com/nkjzm/UniBuildNumber/blob/master/LICENSE)
+
+[UniHamburger](https://github.com/nkjzm/UniHamburger) は [MIT LICENSE](https://github.com/nkjzm/UniBuildNumber/blob/master/LICENSE) で公開されています。
+
+このライブラリは [SIL OPEN FONT LICENSE](https://github.com/nkjzm/UniHamburger/blob/main/Assets/UniHamburger/Fonts/Noto_Sans_JP/OFL.txt) に基づき [Noto_Sans_JP](https://fonts.google.com/noto/specimen/Noto+Sans+JP) を含んでいます。
 
 # Author
 
